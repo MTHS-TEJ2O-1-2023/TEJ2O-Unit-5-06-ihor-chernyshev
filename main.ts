@@ -13,8 +13,8 @@ basic.showIcon(IconNames.Happy)
 input.onButtonPressed(Button.A, function () {
   basic.clearScreen()
   disctance = sonar.ping(
-    DigitalPin.P1, 
-    DigitalPin.P2, 
+    DigitalPin.P1,
+    DigitalPin.P2,
     PingUnit.Centimeters
   )
   basic.showNumber(disctance)
