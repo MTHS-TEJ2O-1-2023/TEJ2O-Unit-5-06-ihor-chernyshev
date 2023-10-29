@@ -2,21 +2,21 @@
  *
  * Created by: Ihor Chernyshev
  * Created on: Oct 2023
- * This program ...
+ * This program finds the distance using a sonar
 */
 
-let disctance = 0
+let distance = 0
 
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
   basic.clearScreen()
-  disctance = sonar.ping(
+  distance = sonar.ping(
     DigitalPin.P1,
     DigitalPin.P2,
     PingUnit.Centimeters
   )
-  basic.showNumber(disctance)
+  basic.showNumber(distance)
   basic.showIcon(IconNames.Happy)
 })
